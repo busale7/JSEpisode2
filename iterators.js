@@ -16,13 +16,19 @@ const logger = function(array) {
 *   in degrees Fahrenheit
 * - Returns an array of temperatures
 *   in degrees Celsius
-*
+*	let Fehren =temperatures.map(temp => (temp- 32)* (5/9) );
+
 * The conversion is:
 *   C = (F - 32) * (5/9)
 ************************************/
 const toCelsius = function(temperatures) {
-  // Your code here
-}
+	let Fahrenheit =temperatures.map(temp => (temp-32) *(5/9));
+		
+
+
+
+
+};
 
 
 /**************************************
