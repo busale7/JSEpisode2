@@ -42,7 +42,8 @@ const toCelsius = function(temperatures) {
 *   that exceed the threshhold
 ***************************************/
 const hottestDays = function(temperatures, threshhold) {
-  let hotdays = temperatures.filter(temp=> (temp >threshhold));
+  let hotdays = temperatures.filter(temp => (temp >threshhold));
+
   return hotdays;
 }
 
@@ -62,7 +63,9 @@ const hottestDays = function(temperatures, threshhold) {
 *       all previous functions
 *******************************************/
 const logHottestDays = function(temperatures, threshhold) {
-  // Your code here
+  let hotdays = temperatures.filter(temp => (temp > threshhold));
+  let Fahrenheit = hotdays.map(temp => (temp-32) * (5/9));
+  Fahrenheit.forEach(arr => console.log(arr));
 }
 
 
