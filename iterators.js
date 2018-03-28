@@ -42,7 +42,8 @@ const toCelsius = function(temperatures) {
 *   that exceed the threshhold
 ***************************************/
 const hottestDays = function(temperatures, threshhold) {
-  // Your code here
+  let hotdays = temperatures.filter(temp=> (temp >threshhold));
+  return hotdays;
 }
 
 
